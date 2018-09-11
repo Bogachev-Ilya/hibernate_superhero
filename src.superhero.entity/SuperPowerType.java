@@ -4,10 +4,11 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-public class SuperPowerType extends AbstractEntity {
+public class SuperPowerType extends AbstractEntity implements Serializable {
 
     @NotEmpty
     @Column(unique = true)

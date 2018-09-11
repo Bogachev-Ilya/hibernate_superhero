@@ -3,10 +3,11 @@ import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-public class SuperPower extends AbstractEntity {
+public class SuperPower extends AbstractEntity implements Serializable {
 
     @NotEmpty
     @Column(unique = true)
